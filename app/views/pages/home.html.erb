@@ -1,4 +1,16 @@
-<h1>Welcome to the home Page</h1>
-
-<%= link_to "Articles listing", articles_path %> |
-<%= link_to "About page", about_path %>
+<div id="page-content">
+  <div class="container" id="home-container">
+    <div class="jumbotron text-center text-black">
+      <h1 class="display-4">Blog 4 Foodies</h1>
+      <p class="lead">there is one truth that is universally acknowledged in the food industry: </p>
+      <hr class="my-4">
+      <p>if no one eats it, it might as well not exist..</p>
+      <a class="btn btn-success btn-lg" href="#" role="button">Sign up!</a>
+    </div>
+  </div>
+</div>
+<footer id="sticky-footer" class="py-4 bg-dark text-white">
+  <div class="container text-center">
+    <small>Copyright &copy; <%= link_to "blog4foodie.com", "https://cafejavas.co.ug/user/home", class:"text-white" %></small>
+  </div>
+</footer>
