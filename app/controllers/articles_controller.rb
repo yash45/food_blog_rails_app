@@ -20,6 +20,8 @@ class ArticlesController < ApplicationController
         #render plain:params[:article]
 
         @article = Article.new(article_params)
+        @article.user = User.first
+
         #shows the articles object in the browser
         # render plain: @article.inspect
         if @article.save
